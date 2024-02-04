@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLOv3 Object Detection</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1; /* Light gray background */
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db; /* Blue heading color */
+            padding: 20px;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border: 2px solid #3498db; /* Blue border around video */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Surveillance Camera for Gate System</h1>
+    <img src="{{ url_for('video_feed') }}" alt="Video Stream">
+</body>
+</html>
